@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    z-index: 99;
 }
 header a {
     text-decoration: none;
@@ -79,4 +80,27 @@ main {
 footer {
     background-color: beige;
     margin-top: auto;
+}
+
+
+/* Media query for tablets and larger (768px and up) */
+@media screen  and (min-width: 768px) { 
+    /* Header section */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+
+    }
+    #menu {
+        display: flex;
+    }
+    #menu> li{
+        padding-left: 1rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
 }
