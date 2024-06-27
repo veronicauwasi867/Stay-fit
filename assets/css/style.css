@@ -10,7 +10,7 @@
 /* General */
 body {
     font-family:"Open Sans", sans-serif;
-    min-height: 50vh;
+    min-height: 100vh;
     flex-direction: column;
     display: flex;
     color: black;
@@ -39,4 +39,5 @@ main {
 /* Footer */
 footer {
     background-color: beige;
+    margin-top: auto;
 }
