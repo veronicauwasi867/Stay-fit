@@ -26,6 +26,9 @@ header {
     width: 100%;
     box-shadow: 0 2px 2px black;
 }
+header a {
+    text-decoration: none;
+}
 h1 {
     font-family:"Merriweather", serif;;
     text-transform: uppercase;
