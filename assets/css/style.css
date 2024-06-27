@@ -7,14 +7,16 @@
     padding: 0;
     margin: 0;
 }
+
 /* General */
 body {
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     min-height: 100vh;
     flex-direction: column;
     display: flex;
     color: black;
 }
+
 /* Header */
 header {
     background-color: whitesmoke;
@@ -28,51 +30,59 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    z-index: 99;
 }
+
 header a {
     text-decoration: none;
 }
+
 h1 {
-    font-family:"Merriweather", serif;;
+    font-family: "Merriweather", serif;
     text-transform: uppercase;
 }
+
 #menu {
     list-style-type: none;
     letter-spacing: 4px;
-    
+
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid blue;
 }
+
 /*Navbar styles with dropdown */
 nav {
     background-color: aliceblue;
     width: 100%;
-    position:absolute;
+    position: absolute;
     display: none;
     top: 100%;
     left: 0;
     box-shadow: 0 2px 2px black;
 }
+
 #nav-toggle:checked~nav {
     display: block;
 }
 
 #nav-toggle {
-display: none;
+    display: none;
 }
+
 .nav-toggle {
     font-size: 2rem;
 }
+
 /* Main-Content */
 main {
     background-color: aqua;
     flex: auto;
-    margin-top:47px;
+    margin-top: 47px;
 
 }
 
@@ -84,7 +94,8 @@ footer {
 
 
 /* Media query for tablets and larger (768px and up) */
-@media screen  and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
+
     /* Header section */
     nav {
         display: block;
@@ -94,13 +105,34 @@ footer {
         padding-right: 1rem;
 
     }
+
     #menu {
         display: flex;
     }
-    #menu> li{
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle {
         display: none;
     }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    /* Main */
+    main {
+        /*main content is pushed down as to accomdate larger header */
+        margin-top: 79PX;
+    }  
+    
+}
+/* Media query for laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+#menu a:hover {
+    border-bottom: 2px solid blue;
+}
 }
