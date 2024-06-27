@@ -1,5 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* Asterisk */
 * {
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 /* General */
 body {
     font-family:"Open Sans", sans-serif;
-    min-height: 100vh;
+    min-height: 50vh;
     flex-direction: column;
     display: flex;
     color: black;
@@ -23,6 +24,10 @@ header {
 }
 h1 {
     font-family:"Merriweather", serif;;
+    text-transform: uppercase;
+}
+.active {
+    border-bottom: 2px solid blue;
 }
 
 
