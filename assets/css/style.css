@@ -71,6 +71,8 @@ display: none;
 main {
     background-color: aqua;
     flex: auto;
+    margin-top:47px;
+
 }
 
 /* Footer */
