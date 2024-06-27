@@ -17,7 +17,7 @@ body {
 }
 /* Header */
 header {
-    background-color: palevioletred;
+    background-color: whitesmoke;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
@@ -25,6 +25,9 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 0 2px 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 header a {
     text-decoration: none;
@@ -44,8 +47,26 @@ h1 {
 .active {
     border-bottom: 1px solid blue;
 }
+/*Navbar styles with dropdown */
+nav {
+    background-color: aliceblue;
+    width: 100%;
+    position:absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 2px black;
+}
+#nav-toggle:checked~nav {
+    display: block;
+}
 
-
+#nav-toggle {
+display: none;
+}
+.nav-toggle {
+    font-size: 2rem;
+}
 /* Main-Content */
 main {
     background-color: aqua;
