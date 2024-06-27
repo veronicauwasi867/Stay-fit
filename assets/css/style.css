@@ -33,8 +33,16 @@ h1 {
     font-family:"Merriweather", serif;;
     text-transform: uppercase;
 }
+#menu {
+    list-style-type: none;
+    letter-spacing: 4px;
+    
+}
+#menu > li {
+    margin-bottom: 1em;
+}
 .active {
-    border-bottom: 2px solid blue;
+    border-bottom: 1px solid blue;
 }
 
 
