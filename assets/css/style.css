@@ -117,6 +117,34 @@ main {
     flex-shrink: 10;
    align-items: flex-end;
 }
+/* About Us Section */
+#about {
+    background-color: transparent;
+    min-height: fit-content;
+}
+#about >h2 {
+    text-transform: capitalize;
+    color: blue;
+    text-align: center;
+}
+#value >h3{
+    text-transform: capitalize;
+    color: #fff;
+    text-align: left;
+}
+
+
+.about {
+    flex:1 0 auto;
+    background-color: rgb(23, 22, 22);
+    height: fit-content;
+}
+#offers {
+    color: #ffff;
+    text-align:center;
+}
+    
+
 
 /* Footer */
 #social-media {
