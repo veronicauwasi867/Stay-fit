@@ -87,15 +87,16 @@ nav {
 main {
     flex: 1 0 auto;
     margin-top: 47px;
+   
+}
+  
+
+/* woman-training */
+#woman-training {
     width: 100vw;
     height:10%;
     background: url("../images/woman-training.jpg") no-repeat center center;
 }
-  
-
-
-/* woman-training */
-#woman-training 
 
 #introduction {
     background-color: rgb(0, 0, 0, 0);
@@ -110,8 +111,12 @@ main {
 #introduction >h2, #introduction >h3 {
     color: blue;
 }
-   
 
+#fruit-juice {
+    background: url("../images/fruit-juice.png") no-repeat center;
+    flex-shrink: 10;
+   align-items: flex-end;
+}
 
 /* Footer */
 #social-media {
