@@ -89,34 +89,43 @@ main {
     margin-top: 47px;
    
 }
-  
+  #reason {
+    position: absolute;
+    bottom:10%;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+.why {
+    padding: center;
+    bottom:10%;
+    width: 100%;
 
-/* woman-training */
+}
+/* First Image woman-training */
 #woman-training {
     width: 100vw;
     height:10%;
-    background: url("../images/woman-training.jpg") no-repeat center center;
+   
 }
 
 #introduction {
     background-color: rgb(0, 0, 0, 0);
-    font-size: 100%;
+    font-size: 50%;
     position: absolute;
-    bottom: 30px;
-    width: 80%;
+    bottom:50%;
+    width: 100%;
     min-height: 200px;
     padding-top: 40px;
     padding-left: 20px;
+    background: url("../images/woman-training.jpg") no-repeat center center/cover;
 }
 #introduction >h2, #introduction >h3 {
     color: blue;
 }
 
-#fruit-juice {
-    background: url("../images/fruit-juice.png") no-repeat center;
-    flex-shrink: 10;
-   align-items: flex-end;
-}
+
 /* About Us Section */
 #about {
     background-color: transparent;
@@ -144,8 +153,33 @@ main {
     text-align:center;
 }
     
-
-
+/* Book A Time Section */
+#form {
+    background-image: url("../images/group-training.jpg");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+#booking-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+#booking-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+.text-input {
+    background: transparent;
+    color: #fafafa; 
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;   
+    padding: 0 5px;
+}
 /* Footer */
 #social-media {
     text-align: center;
@@ -200,7 +234,17 @@ main {
         width: 300px;
         right: 20%;
     }
-    
+    /* Book A Time Section */
+    #form {
+        background-position: center;
+        position: relative;
+    }
+    #booking-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
 }
 /* Media query for laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
