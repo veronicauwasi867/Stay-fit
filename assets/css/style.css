@@ -55,7 +55,7 @@ h1 {
     border-bottom: 2px solid blue;
 }
 
-/*Navbar styles with dropdown */
+/* Navbar styles with dropdown */
 nav {
     background-color: aliceblue;
     width: 100%;
@@ -80,20 +80,29 @@ nav {
 
 /* Main-Content */
 main {
-    background-color: aqua;
-    flex: auto;
+    flex: 1 0 auto;
     margin-top: 47px;
+    height:auto;
+    width: 100%;
+    background: url("../images/woman-training.jpg") center center;
+}
+  
+
+
+/* woman-training */
+#woman-training {
 
 }
+   
+
 
 /* Footer */
 #social-media {
     text-align: center;
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content : space-evenly;
     list-style-type: none;
-
 }
 #social-media i {
     font-size: 150%;
@@ -134,7 +143,7 @@ main {
     }
     /* Main */
     main {
-        /*main content is pushed down as to accomdate larger header */
+        /* main content is pushed down as to accomdate larger header */
         margin-top: 79PX;
     }  
     
